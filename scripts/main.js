@@ -1,14 +1,12 @@
+turno = 0;
 
-function create(htmlStr) {
-    var frag = document.createDocumentFragment(),
-        temp = document.createElement('div');
-    temp.innerHTML = htmlStr;
-    while (temp.firstChild) {
-        frag.appendChild(temp.firstChild);
-    }
-    return frag;
-}
+const btnPulsado = (e) => {
+    const btn = e.target;
+    btn.style.backgroundColor = turno % 2 ? 'red' : 'green';
+    turno++; 
+};
 
-var fragment = create('<div>Hello!</div><p>...</p>');
-// You can use native DOM methods to insert the fragment:
-document.body.insertBefore(fragment, document.body.childNodes[0]);
+document.querySelectorAll('button').forEach(
+    obj => obj.addEventListener('click', btnPulsado)
+);
+
