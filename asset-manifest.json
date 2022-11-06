@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/yikes/static/css/main.130a1e80.css",
-    "main.js": "/yikes/static/js/main.dc403616.js",
+    "main.js": "/yikes/static/js/main.7b9483e1.js",
     "index.html": "/yikes/index.html",
     "main.130a1e80.css.map": "/yikes/static/css/main.130a1e80.css.map",
-    "main.dc403616.js.map": "/yikes/static/js/main.dc403616.js.map"
+    "main.7b9483e1.js.map": "/yikes/static/js/main.7b9483e1.js.map"
   },
   "entrypoints": [
     "static/css/main.130a1e80.css",
-    "static/js/main.dc403616.js"
+    "static/js/main.7b9483e1.js"
   ]
 }
