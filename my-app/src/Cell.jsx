@@ -8,10 +8,13 @@ function Cell() {
   return (
     <img
       className="cell"
+      
       onClick={function check(e) {
         const btn = e.target;
-        btn.src = turno ? player1 : player2;
-        turno = !turno;
+        if (btn.src === ""){
+          btn.src = turno ? player1 : player2;
+          turno = !turno;
+        }
       }}
     ></img>
   );
