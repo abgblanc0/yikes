@@ -1,12 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import Cell from './Cell'
+import './style.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
-function Hola(){
-    return <h1> adios </h1>
-}
 
 root.render(
-    <Hola/>
+    <>
+    <div className='board'>
+        <Cell/>
+        <Cell/>
+        <Cell/>
+        <Cell/>
+        <Cell/>
+        <Cell/>
+        <Cell/>
+        <Cell/>
+        <Cell/>
+    </div>
+    </>
 )
