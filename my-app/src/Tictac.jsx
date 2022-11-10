@@ -3,9 +3,10 @@ import { useState } from "react";
 
 function Tictac() {
   var [turn, setTurn] = useState(true);
-  return (
+
+  var result = (
     <>
-      <div className="board">
+      <div id="board">
         <Cell turn={turn} setTurn={setTurn} />
         <Cell turn={turn} setTurn={setTurn} />
         <Cell turn={turn} setTurn={setTurn} />
@@ -19,6 +20,8 @@ function Tictac() {
       <center> Es el turno del Jugador {turn ? 1 : 2}</center>
     </>
   );
+
+  return result;
 }
 
 export default Tictac;
